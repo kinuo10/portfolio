@@ -7,7 +7,11 @@
           <div class="margin-auto bg-white w-1/2 h-48 rounded-full flex">
             <img class="margin-auto w-4/5 h-4/5" :src=" skill.image " alt="">
           </div>
-          <div class="p-skill__text bg-white p-9 pt-32 pb-14 rounded-2xl">{{ skill.text }}</div>
+          <!-- <h2>{{ skill.lang }}</h2> -->
+          <div class="p-skill__text bg-white p-9 pt-28 pb-14 rounded-2xl">
+            <h2 class="text-2xl font-bold text-center mb-3">{{ skill.lang }}</h2>
+            <p>{{ skill.text }}</p>
+          </div>
         </li>
       </ul>
       <router-link to="" class="btn-to-detail">詳細はこちら</router-link>

@@ -5,6 +5,7 @@
     </section>
     <TopProfile></TopProfile>
     <TopSkill></TopSkill>
+    <TopProduct></TopProduct>
     <div style="height:400px;"></div>  
   </div>
 </template>
@@ -13,6 +14,7 @@
 import FvImage from "@/assets/img/background1.png"
 import TopProfile from "../components/TopProfile.vue"
 import TopSkill from "../components/TopSkill.vue"
+import TopProduct from "../components/TopProduct.vue"
 
 export default {
   data() {
@@ -22,7 +24,8 @@ export default {
   },
   components: {
     TopProfile,
-    TopSkill
+    TopSkill,
+    TopProduct
   }
 }
 </script>

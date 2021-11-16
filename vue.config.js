@@ -1,9 +1,15 @@
-// module.exports = {
-//   css: {
-//     loaderOptions: {
-//       scss: {
-//         prependData: `@import "@/assets/scss/style.scss";`
-//       }
-//     },
-//   },
-// }
+// style.scssをグローバルで使用する
+
+module.exports = {
+  css: {
+    loaderOptions: {
+      sass: {
+        // sass-loader@10.2.0
+        // preventDataだとエラー吐く
+        additionalData: `
+          @import "@/assets/scss/style.scss";
+        `
+      }
+    }
+  }
+};

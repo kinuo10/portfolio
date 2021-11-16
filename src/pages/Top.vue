@@ -10,10 +10,11 @@
 </template>
 
 <script>
-import FvImage from "@/assets/img/background1.png"
 import TopProfile from "../components/TopProfile.vue"
 import TopSkill from "../components/TopSkill.vue"
 import TopProduct from "../components/TopProduct.vue"
+
+import FvImage from "@/assets/img/background1.png"
 
 export default {
   data() {

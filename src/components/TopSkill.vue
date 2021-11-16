@@ -70,11 +70,11 @@ export default {
     }
   }
 
-  // @include mq(lg) {
-  //   .p-skill {
-  //     &__content {
-  //       width: 48%;
-  //     }
-  //   }
-  // }
+  @include mq(lg) {
+    .p-skill {
+      &__content {
+        width: 48%;
+      }
+    }
+  }
 </style>

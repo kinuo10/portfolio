@@ -23,6 +23,7 @@
 export default {
   data() {
     return {
+      // スキル一覧
       skills: [
         { 
           lang: 'HTML', 
@@ -68,4 +69,12 @@ export default {
       margin-top: -100px;
     }
   }
+
+  // @include mq(lg) {
+  //   .p-skill {
+  //     &__content {
+  //       width: 48%;
+  //     }
+  //   }
+  // }
 </style>

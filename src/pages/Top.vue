@@ -6,7 +6,6 @@
     <TopProfile></TopProfile>
     <TopSkill></TopSkill>
     <TopProduct></TopProduct>
-    <div style="height:400px;"></div>  
   </div>
 </template>
 

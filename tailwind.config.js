@@ -1,7 +1,8 @@
 module.exports = {
   theme: {
     screens: {
-      sm: {'max': '560px'}
+      tab: {'max': '1024px'},
+      sp: {'max': '599px'}
     }
   }
 }

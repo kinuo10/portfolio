@@ -1,28 +1,32 @@
 <template>
-  <section class="top-section bg-gray-200">
+  <section class="top-section tab:top-section-tab bg-gray-200">
     <div class="margin-auto max-w-6xl w-11/12">
-      <h1 class="top-title">技術紹介</h1>
+      <Title :title="sectionTitle"></Title>
       <ul class="p-skill__contents flex justify-between flex-wrap">
-        <li class="p-skill__content" v-for="skill in skills" :key="skill.lang">
+        <li class="p-skill__content sp:w-full" v-for="skill in skills" :key="skill.lang">
           <div class="margin-auto bg-white w-1/2 h-48 rounded-full flex">
-            <img class="margin-auto w-4/5 h-4/5" :src=" skill.image " alt="">
+            <img class="margin-auto w-4/5 h-3/5" :src=" skill.image " alt="">
           </div>
-          <!-- <h2>{{ skill.lang }}</h2> -->
-          <div class="p-skill__text bg-white p-9 pt-28 pb-14 rounded-2xl">
-            <h2 class="text-2xl font-bold text-center mb-3">{{ skill.lang }}</h2>
+          <div class="p-skill__text bg-white p-9 pt-20 pb-14 rounded-2xl sp:px-3">
+            <h2 class="text-2xl font-bold text-center mb-3 sp:text-xl">{{ skill.lang }}</h2>
             <p>{{ skill.text }}</p>
           </div>
         </li>
       </ul>
-      <router-link to="" class="btn-to-detail">詳細はこちら</router-link>
+      <!-- <router-link to="" class="btn-to-detail">詳細はこちら</router-link> -->
+      <BtnDetail url="/skill" :name="sectionTitle"></BtnDetail>
     </div>
   </section>
 </template>
 
 <script>
+import Title from "./Title.vue"
+import BtnDetail from "./BtnDetail.vue"
+
 export default {
   data() {
     return {
+      sectionTitle: '技術紹介',
       // スキル一覧
       skills: [
         { 
@@ -52,6 +56,10 @@ export default {
         },
       ]
     }
+  },
+  components: {
+    Title,
+    BtnDetail
   }
 }
 </script>
@@ -70,10 +78,21 @@ export default {
     }
   }
 
-  @include mq(lg) {
+  @include mq(tab) {
     .p-skill {
       &__content {
         width: 48%;
+      }
+    }
+  }
+
+  @include mq(sp) {
+    .p-skill {
+      &__content {
+        width: 100%;
+        &:first-child {
+          margin-top: 0;
+        }
       }
     }
   }

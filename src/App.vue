@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="default-font-family">
+  <div id="app" class="font-body">
     <router-view name="header"></router-view>
     <router-view></router-view>
     <router-view name="footer"></router-view>

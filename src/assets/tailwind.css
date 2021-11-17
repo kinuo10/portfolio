@@ -4,38 +4,46 @@
 @tailwind utilities;
 
 @layer utilities {
-  .default-font-family {
-    font-family: "Helvetica Neue",
-    Arial,
-    "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans",
-    Meiryo,
-    sans-serif;
-  }
   .margin-auto {
     margin: auto;
   }
-  .top-section {
-    padding: 80px 0;
+  @responsive {
+    .top-section {
+      padding: 80px 0;
+    }
+    .top-section-tab {
+      padding: 60px 0
+    }
   }
-  .top-title {
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 40px;
+  @responsive {
+    .title-l {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+    .title-m {
+      font-size: 28px;
+    }
   }
-  .btn-to-detail {
-    width: 300px;
-    height: 60px;
-    background-color: orange;
-    border-radius: 6px;
-    color: #fff;
-    font-weight: bold;
-    padding: 20px 40px;
-    font-size: 24px;
-    margin: 80px auto 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  @responsive {
+    .btn-to-detail {
+      width: 300px;
+      height: 60px;
+      background-color: orange;
+      border-radius: 6px;
+      color: #fff;
+      font-weight: bold;
+      padding: 20px 40px;
+      font-size: 24px;
+      margin: 80px auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-to-detail-m {
+      font-size: 18px;
+      margin: 60px auto 0;
+    }
+  }  
 }

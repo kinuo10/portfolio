@@ -27,7 +27,7 @@ export default {
   },
   components: {
     Title, // タイトルを表示させるためのコンポーネント
-    BtnDetail // 詳細ボタンを表示するコンポーネント
+    BtnDetail, // 詳細ボタンを表示するコンポーネント,
   }
 }
 </script>

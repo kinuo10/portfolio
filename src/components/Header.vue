@@ -1,8 +1,10 @@
 <template>
-  <header class="h-20 fixed z-50 w-full bg-white text-lg">
+  <header class="h-20 fixed z-50 w-full bg-white text-lg border-b border-gray-100">
     <div class="margin-auto max-w-7xl flex justify-between h-full items-center sp:w-11/12">
-      <router-link to="">
-        <figure class="h-20"><img :src="favicon" alt="" class="h-full"></figure>
+      <router-link to="/">
+        <figure class="h-16">
+          <img :src="favicon" alt="" class="h-full">
+        </figure>
       </router-link>
       <!-- PCヘッダーナビ -->
       <ul class="flex sp:hidden">

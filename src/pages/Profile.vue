@@ -34,9 +34,9 @@
               </ul>
             </div>
             <div class="mt-10 sp:mt-8">
-              <h2 class="text-blue-400 text-2xl font-bold mb-1 sp:text-lg">コンタクト</h2>
+              <h2 class="text-blue-400 text-2xl font-bold mb-1 sp:text-lg">お問い合わせ</h2>
               <ul>
-                <li><a href="">aiueo18264@gmail.com</a></li>
+                <li>kinuo357@gmail.com までメールをお願いします。</li>
               </ul>
             </div>
           </div>

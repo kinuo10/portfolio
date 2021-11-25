@@ -1,13 +1,15 @@
 <template>
   <section class="top-section tab:top-section-tab">
-    <div class="margin-auto max-w-6xl w-11/12">
+    <div class="margin-auto max-w-5xl w-11/12">
       <Title :title="stateDefinedTitle"></Title>
       <div class="flex justify-between sp:flex-wrap sp:flex-col-reverse">
-        <p class="p-profile__greeting w-6/12 tab:w-4/5 sp:w-full sp:leading-relaxed sp:mt-5">はじめまして。web系のプログラミングが好きなので、今回ポートフォリオを作成してみました。プログラミングと出会ったのは大学時代です。最初に学習したのはC言語で、HTMLの書籍をきっかけにweb系への興味・関心が強くなりました。学習を続けるうちに仕事でもプログラミングをしたいと思いweb制作を選びました。現在はweb制作はもちろん、設計、デザイン、制作、開発をしながらフロントエンドエンジニアとして毎日を過ごしています。</p>
-        <ul class="flex">
-          <li><img src="@/assets/img/book.png" alt=""></li>
+        <p class="p-profile__greeting w-7/12 tab:w-4/5 sp:w-full sp:leading-relaxed sp:mt-5">ご高覧ありがとうございます。web制作を中心として活動している「きぬお」と申します。私は大学時代に初めてプログラミングに触れました。そこからweb系という分野を知り、プログラミングに対して、興味関心が深っていきました。私が楽しくのめり込んでいったのもあり、web制作ができる会社にフロントエンドエンジニアとして入社しました。現在はWordPressを用いたwebサイト制作ないしLP制作が多く、これらを得意としています。このポートフォリオでは、プロフィール、私のスキル、制作物という3つのカテゴリに分けて作成しています。連絡先については、プロフィールにのせているので、メールアドレスの方からコンタクトをお願いします。</p>
+        <!-- <ul class="">
+           <li><img src="@/assets/img/book.png" alt=""></li>
           <li><img src="@/assets/img/note_pc.png" alt=""></li>
-        </ul>
+          <li></li>
+        </ul>-->
+        <figure class="h-80 w-80"><img class="" src="@/assets/img/profile_icon.png" alt=""></figure>
       </div>
       <BtnDetail url="/profile" :name="stateDefinedTitle"></BtnDetail>
     </div>

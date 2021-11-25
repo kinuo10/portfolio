@@ -13,7 +13,7 @@
           <div class="mt-14 sp:mt-10">
             <div>
               <h2 class="text-blue-400 text-2xl font-bold mb-1 sp:text-lg">自己紹介</h2>
-              <p>はじめまして。web系のプログラミングが好きなので、今回ポートフォリオを作成してみました。プログラミングと出会ったのは大学時代です。最初に学習したのはC言語で、HTMLの書籍をきっかけにweb系への興味・関心が強くなりました。学習を続けるうちに仕事でもプログラミングをしたいと思いweb制作を選びました。現在はweb制作はもちろん、設計、デザイン、制作、開発をしながらフロントエンドエンジニアとして毎日を過ごしています。</p>
+              <p>私について自己紹介をしているページになります。私はプログラミングに関わらず、元々何かを作ることが好きだったので、大学時代に初めてプログラムの処理を動かしたときに面白く感じ、その時からプログラミングに対して興味関心が強くなりました。仕事としては、現在フロントエンジニア歴2年ほどで、最近はWordPressやJavaScriptを触れる機会が多くなりました。プログラミングだけではなく、デザインやwebマーケティングといった制作後の運用も行なっています。モバイルファーストの設計やユーザビリティを考慮したデザイン配置が得意です。今後はNuxtやReactを中心に学習を進める予定です。</p>
             </div>
             <div class="mt-10 sp:mt-8">
               <h2 class="text-blue-400 text-2xl font-bold mb-1 sp:text-lg">趣味</h2>
@@ -28,9 +28,9 @@
             <div class="mt-10 sp:mt-8">
               <h2 class="text-blue-400 text-2xl font-bold mb-1 sp:text-lg">SNS</h2>
               <ul>
-                <li><a href="">ツイッター</a></li>
-                <li><a href="">Qiita</a></li>
-                <li><a href="">Github</a></li>
+                <li><a class="text-blue-500 border-b border-blue-500" href="https://twitter.com/kinuo_no_site">ツイッター</a></li>
+                <li><a class="text-blue-500 border-b border-blue-500" href="https://qiita.com/kinuo6">Qiita</a></li>
+                <li><a class="text-blue-500 border-b border-blue-500" href="https://github.com/kinuo10">Github</a></li>
               </ul>
             </div>
             <div class="mt-10 sp:mt-8">

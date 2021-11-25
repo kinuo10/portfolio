@@ -9,7 +9,7 @@
       <!-- PCヘッダーナビ -->
       <ul class="flex sp:hidden">
         <li v-for="link in links" :key="link.id">
-          <router-link :to="link.url" class="mr-4">{{ link.name }}</router-link>
+          <router-link :to="link.url" class="mr-5">{{ link.name }}</router-link>
         </li>
       </ul>
       <!-- ハンバーガーメニュー 3本ライン -->

@@ -10,7 +10,7 @@
         </li>
       </ul>
     </div>
-    <small class="bg-black text-white font-bold w-full text-center block px-1 py-2">© 2021 Kinuo.</small>
+    <small class="bg-black text-white font-bold w-full text-center block px-1 py-2">© 2021 Kinuo LLC.</small>
   </footer>
 </template>
 

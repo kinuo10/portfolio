@@ -1,7 +1,7 @@
 <template>
   <section class="pt-32 pb-20 tab:pt-28">
     <div class="margin-auto max-w-6xl w-11/12">
-      <Title :title="stateDefinedTitle"></Title>
+      <Title :title="stateDefinedTitle" :caption="subpage.profile"></Title>
       <div class="margin-auto max-w-4xl">
         <div class="flex justify-center flex-col">
           <div class="">
@@ -13,7 +13,7 @@
           <div class="mt-14 sp:mt-10">
             <div>
               <h2 class="text-blue-400 text-2xl font-bold mb-1 sp:text-lg">自己紹介</h2>
-              <p>私について自己紹介をしているページになります。私はプログラミングに関わらず、元々何かを作ることが好きだったので、大学時代に初めてプログラムの処理を動かしたときに面白く感じ、その時からプログラミングに対して興味関心が強くなりました。仕事としては、現在フロントエンジニア歴2年ほどで、最近はWordPressやJavaScriptを触れる機会が多くなりました。プログラミングだけではなく、デザインやwebマーケティングといった制作後の運用も行なっています。モバイルファーストの設計やユーザビリティを考慮したデザイン配置が得意です。今後はNuxtやReactを中心に学習を進める予定です。</p>
+              <p>私はプログラミングに関わらず、元々何かを作ることが好きだったので、大学時代に初めてプログラムの処理を動かしたときに面白く感じ、その時からプログラミングに対して興味関心が強くなりました。仕事としては、現在フロントエンジニア歴2年ほどで、最近はWordPressやJavaScriptを触れる機会が多くなりました。プログラミングだけではなく、デザインやwebマーケティングといった制作後の運用も行なっています。モバイルファーストの設計やユーザビリティを考慮したデザイン配置が得意です。今後はNuxtやReactを中心に学習を進める予定です。</p>
             </div>
             <div class="mt-10 sp:mt-8">
               <h2 class="text-blue-400 text-2xl font-bold mb-1 sp:text-lg">趣味</h2>
@@ -48,6 +48,7 @@
 
 <script>
 import Title from "../components/Title.vue"
+import { titleCaption } from "@/assets/mixins/titleCaption"
 
 export default {
   computed: {
@@ -62,6 +63,7 @@ export default {
   },
   components: {
     Title
-  }
+  },
+  mixins: [ titleCaption ]
 }
 </script>

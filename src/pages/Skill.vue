@@ -1,12 +1,12 @@
 <template>
   <section class="pt-32 pb-20 tab:pt-28 bg-gray-200">
     <div class="margin-auto max-w-6xl w-11/12">
-      <Title :title="stateDefinedTitle"></Title>
-      <div class="text-2xl font-bold text-center sp:border-b sp:border-black sp:mb-10 sp:text-xl sp:text-left sp:font-normal" @click="isMobileVisible(isMobileWidth)">プログラミング言語</div>
+      <Title :title="stateDefinedTitle" :caption="subpage.skill"></Title>
+      <div class="text-2xl font-bold text-center sp:mb-8 sp:text-xl" @click="isMobileVisible(isMobileWidth)">プログラミング言語</div>
       <SkillDisplay :lists="languageLists" end="100" :class="{ 'is-mobile-hidden': isMobileFlag }"></SkillDisplay>
-      <div class="text-2xl font-bold text-center sp:border-b sp:border-black sp:mb-10 sp:text-xl sp:text-left sp:font-normal" @click="isMobileVisible(isMobileWidth)">フレームワーク・ライブラリ</div>
+      <div class="text-2xl font-bold text-center mt-16 sp:mb-8 sp:text-xl" @click="isMobileVisible(isMobileWidth)">フレームワーク・ライブラリ</div>
       <SkillDisplay :lists="frameworkLists" end="100" :class="{ 'is-mobile-hidden': isMobileFlag }"></SkillDisplay>
-      <div class="text-2xl font-bold text-center sp:border-b sp:border-black sp:mb-10 sp:text-xl sp:text-left sp:font-normal" @click="isMobileVisible(isMobileWidth)">その他</div>
+      <div class="text-2xl font-bold text-center mt-16 sp:mb-8 sp:text-xl" @click="isMobileVisible(isMobileWidth)">その他</div>
       <SkillDisplay :lists="otherLists" end="100" :class="{ 'is-mobile-hidden': isMobileFlag }"></SkillDisplay>
     </div>
   </section>
@@ -16,6 +16,7 @@
 import Title from "../components/Title.vue"
 import SkillDisplay from "../components/SkillDisplay.vue"
 import { skillList } from "@/assets/mixins/skillList.js"
+import { titleCaption } from "@/assets/mixins/titleCaption"
 
 export default {
   data() {
@@ -23,10 +24,6 @@ export default {
       isMobileFlag: false,
       isMobileWidth: 0
     }
-  },
-  created() {
-    this.isMobileWidth = window.innerWidth;
-    this.isMobileJudge(this.isMobileWidth);
   },
   methods: {
     isMobileJudge(judgeNum) { // スマホかPCを判定する
@@ -54,7 +51,7 @@ export default {
     Title,
     SkillDisplay
   },
-  mixins: [ skillList ]
+  mixins: [ skillList, titleCaption ]
 }
 </script>
 

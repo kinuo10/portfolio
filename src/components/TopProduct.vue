@@ -1,7 +1,7 @@
 <template>
   <section class="top-section">
     <div class="margin-auto max-w-6xl w-11/12">
-      <Title :title="stateDefinedTitle"></Title>
+      <Title :title="stateDefinedTitle" :caption="toppage.product"></Title>
       <ProductDisplay></ProductDisplay>
       <BtnDetail url="/product" :name="stateDefinedTitle"></BtnDetail>
     </div>
@@ -12,6 +12,8 @@
 import Title from "./Title.vue"
 import BtnDetail from "./BtnDetail.vue"
 import ProductDisplay from "./ProductDisplay.vue"
+
+import { titleCaption } from "@/assets/mixins/titleCaption"
 
 export default {
   data() {
@@ -40,6 +42,7 @@ export default {
       const title = this.$store.state.sectionTitle.productTitle
       return title
     }
-  }
+  },
+  mixins: [ titleCaption ]
 }
 </script>

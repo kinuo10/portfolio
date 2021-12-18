@@ -12,10 +12,26 @@ import Footer from "./components/Footer.vue";
 
 export default new Router ({
   routes: [
-    { path: '/', components: { default: Top, header: Header, footer: Footer } },
-    { path: '/profile', components: { default: Profile, header: Header, footer: Footer } },
-    { path: '/skill', components: { default: Skill, header: Header, footer: Footer } },
-    { path: '/product', components: { default: Product, header: Header, footer: Footer } }
+    { 
+      path: '/', 
+      components: { default: Top, header: Header, footer: Footer }, 
+      meta: { title: 'トップページ' } 
+    },
+    { 
+      path: '/profile', 
+      components: { default: Profile, header: Header, footer: Footer }, 
+      meta: { title: 'プロフィール' } 
+    },
+    { 
+      path: '/skill', 
+      components: { default: Skill, header: Header, footer: Footer }, 
+      meta: { title: 'スキル' } 
+    },
+    { 
+      path: '/product', 
+      components: { default: Product, header: Header, footer: Footer }, 
+      meta: { title: '制作物' } 
+    }
   ],
   mode: 'history'
 })

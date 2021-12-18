@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-gray-500">
     <div class="margin-auto max-w-7xl p-16 sp:px-0 sp:py-10">
-      <router-link to="" class="margin-auto block w-40 h-40">
+      <router-link to="/" class="margin-auto block w-40 h-40">
         <img :src="favicon" alt="" class="w-full h-full">
       </router-link>
       <ul class="flex justify-center mt-4">

@@ -10,12 +10,13 @@ export const skillList = {
       frameworkLists: [
         { id: 1, language: 'Sass', image: require('@/assets/img/language_logos/sass.svg'), text: 'CSSを1000行くらい書いて可読性が詰んでしまい、良い方法を探していたときにSassの存在を知りました。ネスト構造や変数など便利で今でもよく使っています。scssを基本に、FLOCSSとBEMを用いています。' },
         { id: 2, language: 'tailwindcss', image: require('@/assets/img/language_logos/tailwindcss-icon.svg'), text: 'SassでかなりCSSの保守性は良くなったのですが、そもそもCSSを書かないで制作してみたいと思ったのがtailwindcssを試してみたきっかけです。当サイトにも一部使っています。' },
-        { id: 3, language: 'Vue.js', image: require('@/assets/img/language_logos/vue.svg'), text: 'SPA構築やHRM、コンポーネント指向などに興味があったので、Vue.jsを学習しました。このポートフォリオサイトもVue.jsで作成しています。' },
+        { id: 3, language: 'jQuery', image: require('@/assets/img/language_logos/jquery.svg'), text: 'Vue.jsを使用する前によく使っていました。DOMの操作を簡単に操作できることが魅力で愛用していました。アニメーション処理・ajax通信したいときにお世話になっています。' },
+        { id: 4, language: 'Vue.js', image: require('@/assets/img/language_logos/vue.svg'), text: 'SPA構築やHRM、コンポーネント指向などに興味があったので、Vue.jsを学習しました。このポートフォリオサイトもVue.jsで作成しています。' },
       ],
       otherLists: [
         { id: 1, language: 'WordPress', image: require('@/assets/img/language_logos/wordpress-icon.svg'), text: 'コーポレートサイト、ブランドサイトなど自作のテーマを用いて制作しています。テンプレートタグを使用できることや、PHPでコードの記述をできることから今でも制作の際にはお世話になっているCMSです。' },
-        { id: 2, language: 'Photoshop', image: require('@/assets/img/language_logos/photoshop.svg'), text: '画像の修正や合成、トリミングをする際に使用しています。LPやwebページなどのワーヤーフレームを作成するときに便利でしたが、最近ではXDを使っています。' },
-        { id: 3, language: 'SEO対策', image: require('@/assets/img/language_logos/google-analytics.svg'), text: 'Googleアナリティクス・Search Console・SEO内部対策を中心にwebページのSEO対策をしています。' },
+        { id: 2, language: 'Photoshop', image: require('@/assets/img/language_logos/photoshop.svg'), text: '画像の修正や合成、トリミングをする際に使用しています。LPやwebページなどのワイヤーフレームを作成するときに便利でしたが、最近ではXDを使っています。' },
+        { id: 3, language: 'SEO対策', image: require('@/assets/img/language_logos/google-analytics.svg'), text: 'Googleアナリティクス・Google Search Console・SEO内部対策を中心にwebページのSEO対策をしています。' },
       ]
     }
   }
